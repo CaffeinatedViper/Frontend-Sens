@@ -15,30 +15,30 @@ const SensoriumWebsite = () => {
   const posts = [
     { 
       id: 1, 
-      title: 'Exploring Virtual Reality', 
-      excerpt: 'Dive into the world of VR and its impact on our senses.', 
-      content: 'Full content of the VR post...', 
+      title: 'Odkrywanie Wirtualnej Rzeczywistości', 
+      excerpt: 'Zanurz się w świat VR i jego wpływ na nasze zmysły.', 
+      content: 'Pełna treść posta o VR...', 
       thumbnail: '/optic.jpg'
     },
     { 
       id: 2, 
-      title: 'The Art of Sound Design', 
-      excerpt: 'Discover how sound shapes our perception of reality.', 
-      content: 'Full content of the sound design post...', 
+      title: 'Sztuka Projektowania Dźwięku', 
+      excerpt: 'Odkryj, jak dźwięk kształtuje nasze postrzeganie rzeczywistości.', 
+      content: 'Pełna treść posta o projektowaniu dźwięku...', 
       thumbnail: '/exhibition.jpg'
     },
     { 
       id: 3, 
-      title: 'Visual Illusions in Digital Art', 
-      excerpt: 'Explore the fascinating world of visual illusions in digital mediums.', 
-      content: 'Full content of the visual illusions post...', 
+      title: 'Iluzje Wizualne w Sztuce Cyfrowej', 
+      excerpt: 'Odkryj fascynujący świat iluzji wizualnych w mediach cyfrowych.', 
+      content: 'Pełna treść posta o iluzjach wizualnych...', 
       thumbnail: '/debate.jpg'
     },
     { 
       id: 4, 
-      title: 'The Future of Haptic Feedback', 
-      excerpt: 'Learn about emerging technologies in touch sensation.', 
-      content: 'Full content of the haptic feedback post...', 
+      title: 'Przyszłość Zwrotu Hapticznego', 
+      excerpt: 'Dowiedz się o nowych technologiach w zakresie wrażeń dotykowych.', 
+      content: 'Pełna treść posta o zwrocie haptycznym...', 
       thumbnail: '/workshop.jpg'
     },
   ];
@@ -228,15 +228,15 @@ const SensoriumWebsite = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl font-bold mb-4 text-shadow-lg">Welcome to Sensorium</h1>
-              <p className="text-xl mb-8 text-shadow-md">Immerse yourself in a world of sensory experiences</p>
+              <h1 className="text-5xl font-bold mb-4 text-shadow-lg">Witaj w Sensorium</h1>
+              <p className="text-xl mb-8 text-shadow-md">Zanurz się w świecie artystycznych doznań</p>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold"
                 onClick={() => scrollToSection('posts')}
               >
-                Explore Now
+                Dowiedz się więcej
               </motion.button>
             </motion.div>
           </div>
@@ -246,7 +246,7 @@ const SensoriumWebsite = () => {
         {/* Posts Section */}
         <section id="posts" className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Latest Posts</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Najnowsze posty</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {posts.map(post => (
                 <motion.div
@@ -276,19 +276,22 @@ const SensoriumWebsite = () => {
         {/* About Section */}
         <section id="about" className="py-20 bg-gray-100">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">About Sensorium</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">O Sensorium</h2>
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-lg mb-6">
-                Sensorium is a cutting-edge multimedia experience that pushes the boundaries of sensory perception. 
-                Our mission is to create immersive environments that engage all your senses, 
-                transporting you to new realms of imagination and wonder.
+                Sensorium to nowoczesna aplikacja artystyczna, która przesuwa granice percepcji sztuki.
+                 Naszą misją jest tworzenie immersyjnych środowisk, które angażują wszystkie Twoje zmysły, 
+                 przenosząc Cię do nowych światów wyobraźni i zachwytu. Odkryj sztukę w sposób, który dotąd był niemożliwy, 
+                 i pozwól się porwać niezwykłym doznaniom artystycznym.
+
+
               </p>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold"
               >
-                Learn More
+                Poznaj szczegóły
               </motion.button>
             </div>
           </div>
@@ -297,11 +300,11 @@ const SensoriumWebsite = () => {
         {/* Contact Section */}
         <section id="contact" className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Skontaktuj się z nami</h2>
             <div className="max-w-md mx-auto">
               <form className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block mb-1 font-medium">Name</label>
+                  <label htmlFor="name" className="block mb-1 font-medium">Imię</label>
                   <input type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div>
@@ -309,7 +312,7 @@ const SensoriumWebsite = () => {
                   <input type="email" id="email" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block mb-1 font-medium">Message</label>
+                  <label htmlFor="message" className="block mb-1 font-medium">Wiadomość</label>
                   <textarea id="message" rows={4} className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                 </div>
                 <motion.button
@@ -317,7 +320,7 @@ const SensoriumWebsite = () => {
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold"
                 >
-                  Send Message
+                  Wyślij Wiadomość
                 </motion.button>
               </form>
             </div>
